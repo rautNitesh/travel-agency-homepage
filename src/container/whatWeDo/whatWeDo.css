@@ -1,0 +1,32 @@
+.booking-slider {
+  position: relative;
+}
+.booking-slider .slick-track {
+  display: flex;
+}
+.BookingTourCard {
+  transition: transform 0.2s ease-in-out;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+.booking-slider .slick-slide {
+  margin: 0px 10px;
+}
+.slick-slide.slick-active.slick-center.slick-current .BookingTourCard {
+  transition: transform 0.2s ease-in;
+  transform: scale(1.12);
+}
+.BookingTourCard a {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  /* .booking-slider {
+    overflow: hidden;
+  } */
+}

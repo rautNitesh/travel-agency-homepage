@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.app__wrapper {
+  margin: 40px 0px;
+  padding: 40px 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__container {
+  padding: 0 10%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2.heading-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  margin-bottom: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p.content-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+a.custom-button {
+  color: #fff;
+  padding: 10px 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background: var(--color-orange);
+  border-radius: 5px;
+}
+.slick-prev {
+  right: 10%;
+}
+.slick-track {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.slick-next,
+.slick-prev {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+.slick-next,
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: -15%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
+  background: var(--color-orange);
+  width: 35px;
+  height: 35px;
+}
+.slick-next {
+  right: 5%;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: #000;
+}
+.slick-prev:before {
+  content: "\2190";
+}
+.slick-next:before {
+  content: "\2192";
+}
+.slick-next:before,
+.slick-prev:before {
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mid-image {
+  width: 100%;
 }

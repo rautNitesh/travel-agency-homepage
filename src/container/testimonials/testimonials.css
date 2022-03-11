@@ -1,0 +1,39 @@
+.test-card {
+  padding: 10px;
+  text-align: center;
+  margin: 0px 20px;
+}
+.testimonial-slider .slick-track .slick-slide {
+  border: 3px solid var(--color-orange);
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  margin: 0px 40px;
+}
+.testimonial-slider .slick-slide.slick-active.slick-center.slick-current {
+  transform: scale(1.3);
+}
+.testimonial-slider ul.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 50px;
+  clear: both;
+}
+.testimonial-slider li button {
+  width: 10px;
+  height: 10px;
+  background: var(--color-orange);
+  margin: 0px 2px;
+  border-radius: 50%;
+  opacity: 0.5;
+  font-size: 0px;
+  border: 0px;
+  cursor: pointer;
+}
+.testimonial-slider li.slick-active button {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .testimonial-slider .slick-slide.slick-active.slick-center.slick-current {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,38 @@
+.places-slider-wrapper {
+  position: relative;
+  width: 100vw;
+}
+.places-slider {
+  overflow: scroll;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+.place-card {
+  min-width: 30%;
+  margin-right: 25px;
+}
+.place-card div {
+  margin-bottom: 10px;
+}
+.place-image {
+  height: 70vh;
+}
+.place-image img {
+  width: 100%;
+  height: 100%;
+}
+.place-name span {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  color: var(--color-orange);
+}
+.place-name {
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+.places-slider::-webkit-scrollbar {
+  display: none;
+}

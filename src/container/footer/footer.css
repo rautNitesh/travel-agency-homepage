@@ -1,0 +1,21 @@
+.footer-container {
+  background-color: var(--color-orange);
+  padding: 40px 0px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper div {
+  margin: 0px 30px;
+}
+h3.footer-head {
+  color: #fff;
+}
+.footer-wrapper ul li a {
+  color: #fff;
+}
+.footer-wrapper ul li a {
+  color: #fff;
+  font-size: 14px;
+}
